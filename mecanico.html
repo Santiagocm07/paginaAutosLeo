@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros mecanicos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="stylemecanico.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="menu container">
+            <!--<a href="#" class="logo">Nuestro personal</a> -->
+            <img src="imagenes01/logoAutosLeo.jpeg" alt="">
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="images/menu.png" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="mecanico.html">Nuestro personal</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="login.html">Iniciar sesión</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+
+            <div class="contenedor-icono">
+                <ul>
+                    <li class="submenu">
+                        <!--<img src="images/car.svg" id="img-carrito" alt="carrito"> -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tools" viewBox="0 0 16 16">
+                            <path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3q0-.405-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708M3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026z"/>
+                          </svg>
+                        <div id="llave">
+                            <table id="lista-llave">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <!--<th>Precio</th> -->
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-llave" class="btn-2">Cancelar orden</a>
+                            <a href="#" class="btn-2">Agendar personal</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="header-content container">
+            <div class="header-txt">
+                <!--<span>Ofertas</span>-->
+                <h1>Contamos con mecánicos certificados para tu servicio</h1>
+                <!--<a href="#" class="btn-1">Información</a> -->
+            </div>
+            <div class="header-img">
+                <img src="imagenes01/logoMecanico.jpeg" alt="">
+            </div>
+        </div>
+
+    </header>
+
+    <section class="information container">
+        <div class="information-content">
+
+            <div class="information-1">
+                <!--<img src="images/i1.svg" alt=""> -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-smartwatch" viewBox="0 0 16 16">
+                    <path d="M9 5a.5.5 0 0 0-1 0v3H6a.5.5 0 0 0 0 1h2.5a.5.5 0 0 0 .5-.5z"/>
+                    <path d="M4 1.667v.383A2.5 2.5 0 0 0 2 4.5v7a2.5 2.5 0 0 0 2 2.45v.383C4 15.253 4.746 16 5.667 16h4.666c.92 0 1.667-.746 1.667-1.667v-.383a2.5 2.5 0 0 0 2-2.45V8h.5a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5H14v-.5a2.5 2.5 0 0 0-2-2.45v-.383C12 .747 11.254 0 10.333 0H5.667C4.747 0 4 .746 4 1.667M4.5 3h7A1.5 1.5 0 0 1 13 4.5v7a1.5 1.5 0 0 1-1.5 1.5h-7A1.5 1.5 0 0 1 3 11.5v-7A1.5 1.5 0 0 1 4.5 3"/>
+                </svg>
+                <h3>Horario de atención</h3>
+                <p>L-V 8am - 5pm</p>
+                <p>S 8am - 12m</p>
+            </div>
+    
+            <div class="information-1">
+                <!--<img src="images/i2.svg" alt=""> -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card-2-front" viewBox="0 0 16 16">
+                    <path d="M14 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/>
+                    <path d="M2 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5m3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5m3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5m3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5"/>
+                </svg>
+                <h3>Modos de pago</h3>
+                <p>Tarjeta / Efectivo</p>
+            </div>
+    
+            <div class="information-1">
+                <!--<img src="images/i3.svg" alt=""> -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                </svg>
+                <h3>Dirección</h3>
+                <p>El Carmen de Viboral Ant</p>
+                <p>Calle 43 #31-02</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!--<section class="oferts container">
+        <div class="ofert-1">
+            <img src="images/juegoflorelba.jpeg" alt="">
+            <h3>Set de tinto x6</h3>
+            <p>Premium</p>
+        </div>
+
+        <div class="ofert-1">
+            <img src="images/f2.png" alt="">
+            <h3>Oferta</h3>
+            <p>Premium</p>
+        </div>
+
+        <div class="ofert-1">
+            <img src="images/f3.png" alt="">
+            <h3>Oferta</h3>
+            <p>Premium</p>
+        </div>
+
+        <div class="ofert-1">
+            <img src="images/f4.png" alt="">
+            <h3>Oferta</h3>
+            <p>Premium</p>
+        </div>
+    </section> -->
+
+    <main class="products container" id="lista-1">
+        <h2>Mecánicos</h2>
+        <div class="product-content">
+
+            <div class="product">
+                <img src="images/id1.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Juan Rodríguez</h3>
+                    <p class="precio">Cel.3201234567</p>
+                    <p>Reparación de motores</p>
+                    <a href="#" class="agregar-llave btn-2" data-id="1">Agregar</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/id2.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Pablo Gómez</h3>
+                    <p class="precio">Cel.3109876543</p>
+                    <p>Mantenimiento preventivo de los vehículos</p>
+                    <a href="#" class="agregar-llave btn-2" data-id="2">Agregar</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/id3.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Natalia Vargas</h3>
+                    <p class="precio">Cel.3102345678</p>
+                    <p>Reparación y recarga del sistema de aire acondicionado</p>
+                    <a href="#" class="agregar-llave btn-2" data-id="3">Agregar</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/id4.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Sergio Betancur</h3>
+                    <p class="precio">Cel.3238765432</p>
+                    <p>Reemplazo de piezas desgastadas o dañadas</p>
+                    <a href="#" class="agregar-llave btn-2" data-id="4">Agregar</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/id5.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Luis Hernández</h3>
+                    <p class="precio">Cel.3113456789</p>
+                    <p>Ajuste y reparación de sistemas de frenos</p>
+                    <a href="#" class="agregar-llave btn-2" data-id="5">Agregar</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/id6.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Sebastian Morales</h3>
+                    <p class="precio">Cel.3117654321</p>
+                    <p>Reparación de sistemas de suspención y dirección</p>
+                    <a href="#" class="agregar-llave btn-2" data-id="6">Agregar</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/id7.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Mauricio Alzate</h3>
+                    <p class="precio">Cel.3134567890</p>
+                    <p>Verificación y reparación de sistemas eléctricos y electrónicos</p>
+                    <a href="#" class="agregar-llave btn-2" data-id="7">Agregar</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/id8.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Diego Quintero</h3>
+                    <p class="precio">Cel.3126543210</p>
+                    <p>Cambio de aceite y fliltros</p>
+                    <a href="#" class="agregar-llave btn-2" data-id="8">Agregar</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/id9.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Jhojan Castaño</h3>
+                    <p class="precio">Cel.3227890123</p>
+                    <p>Diagnosticos y reparación de problemas en la transmisión</p>
+                    <a href="#" class="agregar-llave btn-2" data-id="8">Agregar</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/id10.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Manuel Soto</h3>
+                    <p class="precio">Cel.3042109876</p>
+                    <p>Inspección y reparación de el sistema de escape</p>
+                    <a href="#" class="agregar-llave btn-2" data-id="8">Agregar</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/id11.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Fernando Alzate</h3>
+                    <p class="precio">Cel.3145436789</p>
+                    <p>Realizacion de pruebas de rendimiento y ajustes en el motor</p>
+                    <a href="#" class="agregar-llave btn-2" data-id="8">Agregar</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/id12.jpeg" alt="">
+                <div class="product-txt">
+                    <h3>Carolina Álvarez</h3>
+                    <p class="precio">Cel.3118761234</p>
+                    <p>Alineación y balanceo de rudas </p>
+                    <a href="#" class="agregar-llave btn-2" data-id="8">Agregar</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!--<section class="service">
+        <div class="service-1">
+            <img class="store" src="images/setflorelba.jpeg" alt="">
+        </div>
+        <div class="service-2">
+            <img class="store" src="images/setmandarino.jpeg" alt="">
+        </div>
+        <div class="service-3">
+            <img class="store" src="images/31otoñal.jpeg" alt="">
+        </div>
+    </section>
+
+    <section class="contact container">
+        <form>
+            <input type="email" placeholder="Correo">
+            <input type="submit" class="btn-3">
+        </form>
+    </section> -->
+
+    <footer class="footer">
+
+        <div class="footer-content container">
+
+            <div class="link">
+                <h3>lorem</h3>
+                <ul>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>lorem</h3>
+                <ul>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>lorem</h3>
+                <ul>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>lorem</h3>
+                <ul>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="scriptmecanico.js"></script>
+</body>
+</html>
